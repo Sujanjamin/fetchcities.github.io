@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dropdowns</title>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="script.js"></script>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://wallpapers.com/images/hd/world-map-aesthetic-00o9smulv4s86fja.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            margin-top:150px;
+            padding: 20px;
+            background-color: rgba(51, 51, 51, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            color: #000000;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #000000
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #000000;
+        }
+
+        option {
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Dropdowns Example</h1>
+        <label for="country">Select Country:</label>
+        <select id="country" name="country">
+            <option value="">Select</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="india">India</option>
+        </select>
+
+        <label for="city">Select City:</label>
+        <select id="city" name="city">
+            <option value="">Select a country first</option>
+        </select>
+    </div>
+</body>
+</html>
